@@ -334,6 +334,7 @@ class AudioSegment(object):
             "-i", input_file.name,  # input_file options (filename last)
             "-vn",  # Drop any video streams if there are any
             "-f", "wav",  # output options (filename last)
+            "-ar", "44100", # quick workaround for sample rate issues
             output.name
         ]
         
